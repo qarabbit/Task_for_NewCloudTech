@@ -9,7 +9,7 @@ Feature: Scenarios for test task
 
   Scenario: Check count of vacancies for current company by region
     When I open Новые Облачные Технологии company page
-    Then I should see 10 vacancies for current region
+    Then I should see 6 vacancies for current region
 
   Scenario: Check vacancy by name
     When I open Новые Облачные Технологии company page
