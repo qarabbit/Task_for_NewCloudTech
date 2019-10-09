@@ -1,0 +1,5 @@
+results/*.html
+target/*
+temp_downloads/**
+.idea
+.bundle

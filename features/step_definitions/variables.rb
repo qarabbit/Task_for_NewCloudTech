@@ -1,0 +1,8 @@
+SEARCH_FIELD = 'input[data-qa^=search-input]'
+SEARCH_BUTTON = '.supernova-search-submit-text'
+COMPANY_IN_VACANCY_DESCR = '.vacancy-serp-item__meta-info a'
+CURRENT_REGION_VACANCY = '.b-employerpage-vacancies-region .bloko-link-switch'
+OTHER_REGION_VACANCY = '.vacancies-in-region-other'
+VACANCY_TITLE = '.vacancy-serp-item__meta-info a'
+VACANCY_COUNTER = '.b-employerpage-vacancies-region .b-employerpage-vacancies-hint'
+VACANCY_IN_REGION_TITLE = '.resume-search-item__name'
