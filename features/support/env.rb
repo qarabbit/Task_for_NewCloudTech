@@ -8,7 +8,7 @@ require 'rspec'
 Capybara.default_driver = :selenium
 Capybara.javascript_driver = :selenium
 Capybara.default_selector = :css
-Capybara.default_max_wait_time = 7
+Capybara.default_max_wait_time = 2
 Capybara.default_normalize_ws = true
 
 rendered_config = ERB.new(File.read('config/config.json')).result binding
@@ -28,8 +28,6 @@ Capybara.register_driver :selenium do |app|
     Selenium::WebDriver::Chrome.driver_path = File.join(Dir.pwd, 'resources', 'chromedriver.exe').tr('/', '\\')
   else
     options.add_argument('--headless')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--disable-popup-blocking')
     options.add_argument('--window-size=1920,1080')
   end
   options.add_argument('--start-maximized')
